@@ -1,0 +1,279 @@
+   /* PROJETO: ThorMania
+DESCRIÇÃO: Estilização do site de adoção de pets, com foco em um design moderno e amigável, utilizando cores vibrantes e elementos gráficos relacionados a animais de estimação.
+AUTOR: Ana Paula Lopes Travassos 
+DATA: 2026-02-09 */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+/* Container do Header */
+.header-adocao {
+    background-color: #ffffff;
+    padding: 15px 0;
+    border-bottom: 2px solid #f0f0f0; /* Linha cinza clarinha embaixo */
+}
+
+/* Área da Logo */
+.logo-area {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.heart-icon {
+    color: #ff5a94; /* Rosa da logo */
+    font-size: 32px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.paw-inside {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo-text {
+    font-family: 'Fredoka One', cursive;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-left: 12px;
+    
+    /* Aplicando o degradê */
+    background: linear-gradient(90deg, #ff5a94, #ff8c00); /* Do rosa para o laranja */
+    -webkit-background-clip: text; /* Corta o fundo no formato do texto */
+    -webkit-text-fill-color: transparent; /* Torna o texto transparente para mostrar o fundo */
+    
+    /* Garante que o efeito funcione também em navegadores sem -webkit */
+    background-clip: text;
+    color: transparent;
+    
+}
+
+
+/* Área dos Ícones */
+.icons-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.imagem-patinha {
+    filter: sepia(100%) saturate(500%) hue-rotate(10deg); /* Isso força a imagem a ficar em tons de laranja/amarelo */
+}
+.logo-patinha {
+    color: #FF8C00; /* Use exatamente o mesmo código de cor do seu texto ThorMania */
+    font-size: 24px;
+    margin-left: 10px;
+   
+
+}
+
+
+.menu-circle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu-circle i {
+    font-size: 20px;
+    color: #000;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: sans-serif;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-menu {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    transition: 0.3s;
+    background: white;
+}
+
+.card-menu:hover {
+    border-color: #FF8C00;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.summary {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-menu:hover .summary {
+    opacity: 1;
+    max-height: 200px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 10px;
+}
+
+.card-menu img {
+    width: 65px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.destaque img {
+     width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.card-text {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+}
+/*Area de pesquisa*/
+.search-box {
+    display : flex;
+    align-items: center;
+    background-color: #9e9898;
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 14px;
+    width: 120px;
+    transition: width 0.3s ease;
+}
+
+.search-icon {
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Limpa o fundo do menu */
+.offcanvas {
+    background-color: white !important;
+}
+
+/* Deixa o topo colorido */
+.offcanvas-header {
+    background: linear-gradient(45deg, #ff416c, #ff9800) !important;
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Fredoka', 'Comic Sans MS', cursive, sans-serif;
+
+}
+
+/* Garante que o ícone e o X fiquem brancos no topo */
+.offcanvas-header .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+
+/* Garante que os links fiquem brancos por padrão */
+.list-group-item {
+    background-color: transparent !important;
+    color: black !important;
+    border: none;
+}
+
+.boasvindas {
+    font-family: 'Fredoka', 'Comic Sans MS', cursive, sans-serif; 
+    color: #ff9800 !important; /* Laranja */
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* 1. Estilo padrão dos itens do menu */
+.list-group-item-action {
+    transition: all 0.4s ease; /* Aqui acontece a mágica da suavidade */
+    background-color: transparent !important;
+    color: rgb(0, 0, 0) !important;
+    border: none;
+    display: block;
+    padding: 10px 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* 2. O efeito ao passar o mouse (Hover) */
+.list-group-item-action:hover {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b) !important;
+    color: white !important;
+    
+    /* Faz o item "saltar" levemente para o lado ou para frente */
+    transform: translateX(10px); /* Move 10px para a direita */
+    /* Se preferir que ele cresça, use: transform: scale(1.05); */
+    
+    border-radius: 15px; /* Arredonda os cantos durante a animação */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombrinha */
+}
+
+/* Estilo exclusivo para a página Quem Somos */
+.pagina-quemsomos {
+    font-family: 'Sniglet', cursive;
+    background-color: #fefefe;
+    color: #444;
+    padding: 20px;
+}
+
+/* Deixando os títulos laranjas e fofinhos */
+.pagina-quemsomos h2, 
+.pagina-quemsomos h3,
+.pagina-quemsomos b,
+.pagina-quemsomos strong {
+    color: #fca311;
+    font-weight: 800;
+}
+
+/* O título principal ThorMania com o gradiente que você gosta */
+.pagina-quemsomos h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+/* Ajustando o texto para não ficar grudado na tela */
+.pagina-quemsomos p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+
+/* Link de voltar com estilo de botão */
+.pagina-quemsomos a[href*="index"] {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.pagina-quemsomos a[href*="index"]:hover {
+    transform: scale(1.1);
+} 
