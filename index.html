@@ -210,8 +210,8 @@
 
     <div id="doar-page" style="display: none;">
         <div>
-            <h2>Doar um Pet</h2>
-            <p>Quer doar um pet? Preencha o formulário abaixo e nos envie as informações.</p>
+            <h2>Quer doar um pet?</h2>
+            <p>Preencha o formulário abaixo e nos envie as informações.</p>
         </div>
 
         <form>
@@ -260,6 +260,70 @@
                 <input type="email" 
                 id="email" 
                 placeholder="Email para retorno (se preferir contato por email)"
+                >
+
+            <button type="submit">Enviar!</button>
+            <button class="btn btn-outline-secondary mt-3 home-page">
+                Voltar
+            </button>
+        </form>
+    </div>
+
+    <div id="eventos-page" style="display: none;">
+        <div>
+            <h2>Quer cadastrar um evento relacionado a pets?</h2>
+            <p>Preencha o formulário abaixo e nos envie as informações.</p>
+        </div>
+        <formulario de doacao de pet>
+    <div class="file">
+        <h2><img src="EVENTOS\icoCadastrarEventos.webp">Cadastrar Evento</h2>
+
+        <form>
+            <label for="foto">Insira um Flyer de seu evento:</label>
+                <input type="file" 
+                id="foto" 
+                accept="image/*" 
+                onchange="previewImagem(event)"
+                required
+                >
+
+            <div class="preview">
+                <img id="imagemPreview" src="" alt="">
+            </div>
+
+
+            <label for="data">Data:</label>
+                <input type="date" 
+                id="data" 
+                required
+                >
+
+            <label for="localizacao">Localização:</label>
+                <input type="text" 
+                id="localizacao" 
+                placeholder="Informe o local do evento (rua, número, bairro, cidade, estado)"
+                required
+                ></textarea>
+        
+
+            <label for="Responsavel">Responsável:</label>
+                <input type="text" 
+                id="Responsavel" 
+                placeholder="Nome do responsável pelo evento"
+                required
+                >
+
+            <label for="telefone">Contato:</label>
+                <input type="tel" 
+                id="telefone" 
+                placeholder="Informe um contato"
+                pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
+                required>
+
+            <label for="email">E-mail:</label>
+                <input type="email" 
+                id="email" 
+                placeholder="Email para retorno"
                 >
 
             <button type="submit">Enviar!</button>

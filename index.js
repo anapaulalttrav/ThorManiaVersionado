@@ -45,6 +45,7 @@ const eventosID = document.getElementById('eventos');
 const adotarPageID = document.getElementById('adotar-page');
 const encontreiPageID = document.getElementById('encontrei-page');
 const doarPageID = document.getElementById('doar-page');
+const eventosPageID = document.getElementById('eventos-page');
 const homePageID = document.querySelectorAll('.home-page');
 
 const cleanPage = () => {
@@ -62,6 +63,7 @@ const cleanSubPages = () => {
     adotarPageID.style.display = 'none';
     encontreiPageID.style.display = 'none';
     doarPageID.style.display = 'none';
+    eventosPageID.style.display = 'none';
 };
 
 const home = document.querySelectorAll('.home-page').forEach((element) => {
@@ -97,3 +99,14 @@ const doar = document.getElementById('doar').addEventListener('click', (event) =
     cleanPage();
     doarPageID.style.display = '';
 });
+
+const eventos = document.getElementById('eventos').addEventListener('click', (event) => {
+    event.preventDefault();
+    cleanPage();
+    eventosPageID.style.display = '';
+});
+
+const previewImagem = (event) => {
+    const imagem = document.getElementById('imagemPreview');
+    imagem.src = URL.createObjectURL(event.target.files[0]);
+}
