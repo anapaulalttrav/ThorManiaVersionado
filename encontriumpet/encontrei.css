@@ -1,0 +1,81 @@
+/* =========================
+   PÁGINA ENCONTREI UM PET
+========================= */
+
+#encontrei-page .card {
+    border: none;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#encontrei-page h2 {
+    color: #ff6b6b;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#encontrei-page p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+#encontrei-page .form-label {
+    font-weight: 600;
+    color: #444;
+}
+
+#encontrei-page .form-control,
+#encontrei-page .form-select {
+    border-radius: 12px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+#encontrei-page .form-control:focus,
+#encontrei-page .form-select:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.4);
+}
+
+#encontrei-page button[type="submit"] {
+    background: #ff6b6b;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#encontrei-page button[type="submit"]:hover {
+    background: #ff4f4f;
+    transform: scale(1.02);
+}
+
+#voltar-menu {
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#voltar-menu:hover {
+    background: #f1f1f1;
+}
+
+#encontrei-page {
+    animation: aparecer 0.5s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
