@@ -48,9 +48,8 @@
                 <a href="#" class="list-group-item list-group-item-action home-page">Início</a>
                 <a href="#" class="list-group-item list-group-item-action">Meu Perfil</a>
                 <a id="quem-somos" href="#" class="list-group-item list-group-item-action">Quem Somos</a>
-                <a href="forms.html" class="list-group-item list-group-item-action">Contato</a> 
+                <a href="#" class="list-group-item list-group-item-action">Contato</a> 
             </div>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
     </div>
 </header>
@@ -378,64 +377,66 @@
     <!-- Formulário para "Cadastrar Evento" -->
 
     <div id="eventos-page" style="display: none;">
-        <form>
-        <h2>
-            <img src="imagens\icoCadastrarEventos.webp">Cadastrar Evento
-        </h2>
-        <p>Preencha o formulário abaixo e nos envie as informações.</p>
-        <form>
-            <label for="foto">Insira um Flyer de seu evento:</label>
-                <input type="file" 
-                id="foto" 
-                accept="image/*" 
-                onchange="previewImagem(event)"
-                required
-                >
+        <formulario para cadastrar evento>
+            <div class="file">
+                <form>
+                    <h2>
+                        <img src="imagens\icoCadastrarEventos.webp">Cadastrar Evento
+                    </h2>
+                    <p>Preencha o formulário abaixo e nos envie as informações.</p>
+                    <label for="foto">Insira um Flyer de seu evento:</label>
+                        <input type="file" 
+                        id="foto" 
+                        accept="image/*" 
+                        onchange="previewImagem(event)"
+                        required
+                        >
 
-            <div class="preview">
-                <img id="imagemPreview" src="" alt="">
+                    <div class="preview">
+                        <img id="imagemPreview" src="" alt="">
+                    </div>
+
+
+                    <label for="data">Data:</label>
+                        <input type="date" 
+                        id="data" 
+                        required
+                        >
+
+                    <label for="localizacao">Localização:</label>
+                        <input type="text" 
+                        id="localizacao" 
+                        placeholder="Informe o local do evento (rua, número, bairro, cidade, estado)"
+                        required
+                        ></textarea>
+                
+
+                    <label for="Responsavel">Responsável:</label>
+                        <input type="text" 
+                        id="Responsavel" 
+                        placeholder="Nome do responsável pelo evento"
+                        required
+                        >
+
+                    <label for="telefone">Contato:</label>
+                        <input type="tel" 
+                        id="telefone" 
+                        placeholder="Informe um contato"
+                        pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
+                        required>
+
+                    <label for="email">E-mail:</label>
+                        <input type="email" 
+                        id="email" 
+                        placeholder="Email para retorno"
+                        >
+
+                    <button type="submit">Enviar!</button>
+                    <button class="btn btn-outline-secondary mt-3 home-page">
+                        Voltar
+                    </button>
+                </form>
             </div>
-
-
-            <label for="data">Data:</label>
-                <input type="date" 
-                id="data" 
-                required
-                >
-
-            <label for="localizacao">Localização:</label>
-                <input type="text" 
-                id="localizacao" 
-                placeholder="Informe o local do evento (rua, número, bairro, cidade, estado)"
-                required
-                ></textarea>
-        
-
-            <label for="Responsavel">Responsável:</label>
-                <input type="text" 
-                id="Responsavel" 
-                placeholder="Nome do responsável pelo evento"
-                required
-                >
-
-            <label for="telefone">Contato:</label>
-                <input type="tel" 
-                id="telefone" 
-                placeholder="Informe um contato"
-                pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
-                required>
-
-            <label for="email">E-mail:</label>
-                <input type="email" 
-                id="email" 
-                placeholder="Email para retorno"
-                >
-
-            <button type="submit">Enviar!</button>
-            <button class="btn btn-outline-secondary mt-3 home-page">
-                Voltar
-            </button>
-        </form>
     </div>
 
     <!-- Página de ONGs -->
