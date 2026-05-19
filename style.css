@@ -257,6 +257,7 @@ body {
     transform: scale(1.1);
 }
 
+/* Estilo para a página encontrei */
 #encontrei-page .card {
     border: none;
     border-radius: 20px;
@@ -333,4 +334,73 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+/*Estilo para o formulario doar*/
+.file {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+label {
+    font-size: 1.0rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff5a94;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 90, 148, 0.3);
+}
+
+input[type="file"] {
+    border: none;
+}
+
+button {
+    margin-top: 18px;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #ff5a94, #ff8c00);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.preview {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.preview img {
+    max-width: 100%;
+    border-radius: 10px;
 }

@@ -44,6 +44,7 @@ const ongsID = document.getElementById('ongs');
 const eventosID = document.getElementById('eventos');
 const adotarPageID = document.getElementById('adotar-page');
 const encontreiPageID = document.getElementById('encontrei-page');
+const doarPageID = document.getElementById('doar-page');
 const homePageID = document.querySelectorAll('.home-page');
 
 const cleanPage = () => {
@@ -60,9 +61,10 @@ const cleanPage = () => {
 const cleanSubPages = () => {
     adotarPageID.style.display = 'none';
     encontreiPageID.style.display = 'none';
+    doarPageID.style.display = 'none';
 };
 
-const testHome = document.querySelectorAll('.home-page').forEach((element) => {
+const home = document.querySelectorAll('.home-page').forEach((element) => {
     element.addEventListener('click', (e) => {
         e.preventDefault();
         adotarID.style.display = '';
@@ -88,4 +90,10 @@ const encontrei = document.getElementById('encontrei').addEventListener('click',
     event.preventDefault();
     cleanPage();
     encontreiPageID.style.display = '';
+});
+
+const doar = document.getElementById('doar').addEventListener('click', (event) => {
+    event.preventDefault();
+    cleanPage();
+    doarPageID.style.display = '';
 });
