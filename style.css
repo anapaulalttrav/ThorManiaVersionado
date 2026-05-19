@@ -404,3 +404,63 @@ button {
     max-width: 100%;
     border-radius: 10px;
 }
+
+/* Estilo para a página de blogs */
+
+/* BREADCRUMB */
+.breadcrumb {
+  padding: 10px 20px;
+  color: #777;
+}
+
+/* CATEGORIAS */
+.categorias {
+  padding: 15px 20px;
+}
+
+.categorias button {
+  background: #2c2c2c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.categorias button:hover {
+  background: #ff5a94;
+}
+
+/* GRID POSTS */
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+
+  padding: 50px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* CARDS */
+
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .posts {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .logo-text {
+    font-size: 22px;
+  }
+}

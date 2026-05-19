@@ -45,7 +45,10 @@ const eventosID = document.getElementById('eventos');
 const adotarPageID = document.getElementById('adotar-page');
 const encontreiPageID = document.getElementById('encontrei-page');
 const doarPageID = document.getElementById('doar-page');
+const blogPageID = document.getElementById('blog-page');
 const eventosPageID = document.getElementById('eventos-page');
+const ongsPageID = document.getElementById('ongs-page');
+const quemSomosPageID = document.getElementById('quem-somos-page');
 const homePageID = document.querySelectorAll('.home-page');
 
 const cleanPage = () => {
@@ -62,8 +65,11 @@ const cleanPage = () => {
 const cleanSubPages = () => {
     adotarPageID.style.display = 'none';
     encontreiPageID.style.display = 'none';
+    blogPageID.style.display = 'none';
     doarPageID.style.display = 'none';
     eventosPageID.style.display = 'none';
+    ongsPageID.style.display = 'none';
+    quemSomosPageID.style.display = 'none';
 };
 
 const home = document.querySelectorAll('.home-page').forEach((element) => {
@@ -100,10 +106,28 @@ const doar = document.getElementById('doar').addEventListener('click', (event) =
     doarPageID.style.display = '';
 });
 
+const blog = document.getElementById('blog').addEventListener('click', (event) => {
+    event.preventDefault();
+    cleanPage();
+    blogPageID.style.display = '';
+});
+
 const eventos = document.getElementById('eventos').addEventListener('click', (event) => {
     event.preventDefault();
     cleanPage();
     eventosPageID.style.display = '';
+});
+
+const ongs = document.getElementById('ongs').addEventListener('click', (event) => {
+    event.preventDefault();
+    cleanPage();
+    ongsPageID.style.display = '';
+});
+
+const quemSomos = document.getElementById('quem-somos-page').addEventListener('click', (event) => {
+    event.preventDefault();
+    cleanPage();
+    quemSomosPageID.style.display = '';
 });
 
 const previewImagem = (event) => {

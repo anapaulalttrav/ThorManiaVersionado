@@ -47,8 +47,8 @@
             <div class="list-group list-group-flush">
                 <a href="#" class="list-group-item list-group-item-action home-page">Início</a>
                 <a href="#" class="list-group-item list-group-item-action">Meu Perfil</a>
-                <a href="quemsomos/quemsomos.html" class="list-group-item list-group-item-action">Quem Somos</a>
-                <a href="https://www.google.com" class="list-group-item list-group-item-action">Teste Google</a> 
+                <a id="quem-somos-page" href="#" class="list-group-item list-group-item-action">Quem Somos</a>
+                <a href="forms.html" class="list-group-item list-group-item-action">Contato</a> 
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -155,6 +155,7 @@
             </div>
     </div>
 
+    <!-- Fomulário para "Encontrei um Pet" -->
     <div id="encontrei-page" class="container my-5" style="display: none;">
         <div class="card shadow p-4">
         
@@ -207,6 +208,8 @@
 
         </div>
     </div>
+
+    <!-- Formulário para "Doar um Pet" -->
 
     <div id="doar-page" style="display: none;">
         <div>
@@ -269,15 +272,75 @@
         </form>
     </div>
 
-    <div id="eventos-page" style="display: none;">
-        <div>
-            <h2>Quer cadastrar um evento relacionado a pets?</h2>
-            <p>Preencha o formulário abaixo e nos envie as informações.</p>
-        </div>
-        <formulario de doacao de pet>
-    <div class="file">
-        <h2><img src="EVENTOS\icoCadastrarEventos.webp">Cadastrar Evento</h2>
+    <!-- Pagina de Blogs -->
 
+
+    <div id="blog-page" style="display: none;">
+        <!-- BREADCRUMB -->
+        <section class="breadcrumb">
+            <p>Home / Blog</p>
+        </section>
+
+        <!-- CATEGORIAS -->
+        <section class="categorias">
+            <button>Geral</button>
+            <button>Cachorros</button>
+            <button>Gatos</button>
+            <button>Raças</button>
+            <button>Adoção</button>
+        </section>
+
+        <!-- POSTS -->
+        <section class="posts">
+
+            <div class="card">
+                <img src="imagens/fofin1.jpg" alt="Tecnologia para pets">
+                <h3>Histórias de Pets</h3>
+                <p>Amizade Sem Espécies: Cão e Gato Viralizam em Selfie Fofa...</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/fofin2.jpg" alt="Adoção de animais">
+                <h3>Histórias de Adoção</h3>
+                <p>Dupla Improvável Encanta Internet com Momento de Carinho no Sofá...</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/fofin3.jpg" alt="Preparação para adoção">
+                <h3>Histórias de Pets</h3>
+                <p>Gangue dos Pets: Gato Lidera Grupo de Cachorros em Foto Hilária...</p>
+            </div>
+            
+            <div class="card">
+                <img src="imagens/fofin4.jpg" alt="Tecnologia para pets">
+                <h3>Histórias de Pets</h3>
+                <p>Olhares Que Derretem: Cachorro e Gatinho Viram Símbolo de Companheirismo...</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/fofin5.jpg" alt="Tecnologia para pets">
+                <h3>Histórias de Pets</h3>
+                <p>Soneca em Dose Dupla: Pet e Gatinho Dormindo Abraçados Viralizam...</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/fofin6.jpg" alt="Tecnologia para pets">
+                <h3>Histórias de Pets</h3>
+                <p>Pastor Alemão ¨Perde a Luta¨ Para Gatinho Atacado de Amor...</p>
+            </div>
+
+
+        </section>
+    </div>
+    
+    <!-- Formulário para "Cadastrar Evento" -->
+
+    <div id="eventos-page" style="display: none;">
+        <form>
+        <h2>
+            <img src="imagens\icoCadastrarEventos.webp">Cadastrar Evento
+        </h2>
+        <p>Preencha o formulário abaixo e nos envie as informações.</p>
         <form>
             <label for="foto">Insira um Flyer de seu evento:</label>
                 <input type="file" 
@@ -331,6 +394,95 @@
                 Voltar
             </button>
         </form>
+    </div>
+
+    <!-- Página de ONGs -->
+
+    <div id="ongs-page" style="display: none;">
+        <h2 class="text-center mb-4">ONGs para ajudar 🐾</h2>
+        <div class="row g-3 justify-content-center">
+
+            <div class="col-6 col-md-3">
+                <a href="https://institutoamparanimal.org.br/" target="_blank" class="card-link"> 
+                        <div class="card card-menu destaque">
+                    <div class="card-body">
+                        <img src="imagens/ampara 2.0.png">
+                        <span class="card-text">AMPARA ANIMAL</span>
+                        <small>Resgate e proteção animal</small>
+                        <p class="summary">ONG dedicada ao resgate, tratamento e reabilitação de animais abandonados, maltratados e em situação de risco na região de São Paulo.</p>
+                    </div>
+                </div>
+            </a>    
+            </div>
+
+            <div class="col-6 col-md-3">
+                <a href="https://www.institutoluisamell.com/" target="_blank" class="card-link">
+                <div class="card card-menu destaque">
+                    <div class="card-body">
+                        <img src="imagens/instituto-luisa-mell-logo-png_seeklogo-357201.png">
+                        <span class="card-text">LUISA MELL</span>
+                        <small>Combate aos maus-tratos</small>
+                        <p class="summary">Instituto que combate os maus-tratos aos animais através de ações educativas, resgates e apoio jurídico para proteger animais em situação de vulnerabilidade.</p>
+                    </div>
+                </div>
+            </a>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <a href="https://adoteumgatinho.org.br/" target="_blank" class="card-link">
+                <div class="card card-menu destaque">
+                    <div class="card-body">
+                        <img src="imagens/adote um gatinho.png">
+                        <span class="card-text">ADOTE UM GATINHO</span>
+                        <small>Adoção de gatos</small>
+                        <p class="summary">Plataforma especializada em adoção responsável de gatos, conectando adotantes a felinos resgatados e promovendo cuidados adequados para uma vida feliz.</p>
+                    </div>
+                </div>
+            </a>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <a href="https://institutocaramelo.org/" target="_blank" class="card-link"><div class="card card-menu destaque">   
+                    <div class="card-body">
+                        <img src="imagens/caramelo.png">
+                        <span class="card-text">Instituto Caramelo</span>
+                        <small>Resgate e cuidado</small>
+                        <p class="summary">ONG focada no resgate, cuidado e adoção de animais de rua, especialmente cães e gatos, oferecendo abrigo temporário e tratamento veterinário.</p>
+                    </div>
+                </div>
+            </a>    
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Página de Quem Somos -->
+
+    <div id="quemsomos-page" style="display: none;">
+        <section class="historia">
+                <h2 class="titulo-sessao">Quem Somos</h2>
+                <p>O <strong>ThorMania</strong> nasceu de um sonho e de um grande amor pelos animais. Percebemos que muitos cães esperavam ansiosos por um lar, enquanto muitas famílias queriam adotar, mas não sabiam por onde começar.</p>
+                
+                <p>Criamos este site para ser a ponte entre esses dois mundos. Nosso objetivo é facilitar o encontro entre humanos e seus novos melhores amigos, promovendo a adoção responsável e ajudando ONGs a darem mais visibilidade aos seus peludos.</p>
+            </section>
+
+            <section class="ajuda-area">
+                <h2 class="titulo-sessao">Queremos sua ajuda!</h2>
+                <p>Para manter o ThorMania no ar e ajudar cada vez mais animais, precisamos de você. Seja compartilhando nosso site, sendo um voluntário ou fazendo uma doação para as ONGs parceiras.</p>
+                
+                <div class="cards-ajuda">
+                    <div class="card">
+                        <h3>Doar</h3>
+                        <p>Ajude com ração, medicamentos ou valores para as ONGs.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Divulgar</h3>
+                        <p>Siga-nos nas redes sociais e compartilhe os animais que buscam um lar.</p>
+                    </div>
+                </div>
+            </section>
+
+            <a href="index.html" class="btn-voltar">Voltar para o Início</a>
     </div>
 </main>
 
