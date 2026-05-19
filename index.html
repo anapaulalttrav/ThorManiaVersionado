@@ -16,7 +16,7 @@
 <header class="header-adocao">
   <div class="container d-flex justify-content-between align-items-center">
 
-            <div class="logo-area">
+            <div class="logo-area home-page">
                 <i class="fas fa-heart heart-icon">
                     <i class="fas fa-paw paw-inside"></i>
                 </i>
@@ -45,7 +45,7 @@
         <div class="offcanvas-body">
             <p class="boasvindas">Bem-vindo ao ThorMania!</p>
             <div class="list-group list-group-flush">
-                <a href="#" class="list-group-item list-group-item-action">Início</a>
+                <a href="#" class="list-group-item list-group-item-action home-page">Início</a>
                 <a href="#" class="list-group-item list-group-item-action">Meu Perfil</a>
                 <a href="quemsomos/quemsomos.html" class="list-group-item list-group-item-action">Quem Somos</a>
                 <a href="https://www.google.com" class="list-group-item list-group-item-action">Teste Google</a> 
@@ -154,11 +154,122 @@
                 <!-- Lista de pets para adoção será carregada aqui -->
             </div>
     </div>
+
+    <div id="encontrei-page" class="container my-5" style="display: none;">
+        <div class="card shadow p-4">
+        
+
+            <h2 class="text-center mb-3">🐾 Encontrei um Pet</h2>
+            <p class="text-center text-muted">
+                Ajude esse pet a encontrar seu dono 💛
+            </p>
+
+            <form id="form-encontrei">
+
+                <div class="mb-3">
+                    <label class="form-label">Nome do pet (se souber)</label>
+                    <input type="text" class="form-control" placeholder="Ex: Thor">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Tipo de animal</label>
+                    <select class="form-select">
+                        <option>Cachorro</option>
+                        <option>Gato</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Local onde encontrou</label>
+                    <input type="text" class="form-control" placeholder="Ex: Zona Leste - SP">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Descrição</label>
+                    <textarea class="form-control" rows="3" placeholder="Cor, tamanho, comportamento..."></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Foto do pet</label>
+                    <input type="file" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">
+                    Cadastrar Pet
+                </button>
+
+            </form>
+
+            <button class="btn btn-outline-secondary mt-3 home-page">
+                Voltar
+            </button>
+
+        </div>
+    </div>
+
+    <div id="doar-page" style="display: none;">
+        <div>
+            <h2>Doar um Pet</h2>
+            <p>Quer doar um pet? Preencha o formulário abaixo e nos envie as informações.</p>
+        </div>
+
+        <form>
+            <label for="foto">Foto do animal a ser doado:</label>
+                <input type="file" 
+                id="foto" 
+                accept="image/*" 
+                onchange="previewImagem(event)"
+                required
+                >
+
+            <div class="preview">
+                <img id="imagemPreview" src="" alt="">
+            </div>
+
+
+            <label for="raca">Raça:</label>
+                <input type="text" 
+                id="raca" 
+                placeholder="Informe a raça (se souber)"
+                >
+
+            <label for="descricao">Descrição:</label>
+                <textarea id="descricao" 
+                rows="4" 
+                placeholder="Insira uma descrição detalhada do animal"
+                required
+                ></textarea>
+        
+
+            <label for="dono">Doado por:</label>
+                <input type="text" 
+                id="dono" 
+                placeholder="Nome do doador"
+                required
+                >
+
+            <label for="telefone">Contato:</label>
+                <input type="tel" 
+                id="telefone" 
+                placeholder="Informe um contato para retorno"
+                pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
+                required>
+
+            <label for="email">E-mail:</label>
+                <input type="email" 
+                id="email" 
+                placeholder="Email para retorno (se preferir contato por email)"
+                >
+
+            <button type="submit">Enviar!</button>
+        </form>
+    </div>
 </main>
 
 <footer class="footer">
     <div class="container text-center">
-        <p>&copy; 2024 ThorMania. Todos os direitos reservados.</p>
+        <p>&copy; 2026 ThorMania. Todos os direitos reservados.</p>
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
