@@ -46,6 +46,7 @@ const adotarPageID = document.getElementById('adotar-page');
 const encontreiPageID = document.getElementById('encontrei-page');
 const doarPageID = document.getElementById('doar-page');
 const blogPageID = document.getElementById('blog-page');
+const feiraPageID = document.getElementById('feira-page');
 const ongsPageID = document.getElementById('ongs-page');
 const perdiPageID = document.getElementById('perdi-page');
 const eventosPageID = document.getElementById('eventos-page');
@@ -61,6 +62,7 @@ const cleanPage = () => {
     blogID.style.display = 'none';
     ongsID.style.display = 'none';
     eventosID.style.display = 'none';
+    feiraPageID.style.display = 'none';
 };
 
 const cleanSubPages = () => {
@@ -112,6 +114,12 @@ const blog = document.getElementById('blog').addEventListener('click', (event) =
     event.preventDefault();
     cleanPage();
     blogPageID.style.display = '';
+});
+
+const feiras = document.getElementById('feiras').addEventListener('click', (event) => {
+    event.preventDefault();
+    cleanPage();
+    feiraPageID.style.display = '';
 });
 
 const perdi = document.getElementById('perdi').addEventListener('click', (event) => {
