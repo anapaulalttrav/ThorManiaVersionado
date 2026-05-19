@@ -46,9 +46,10 @@ const adotarPageID = document.getElementById('adotar-page');
 const encontreiPageID = document.getElementById('encontrei-page');
 const doarPageID = document.getElementById('doar-page');
 const blogPageID = document.getElementById('blog-page');
-const eventosPageID = document.getElementById('eventos-page');
 const ongsPageID = document.getElementById('ongs-page');
-const quemSomosPageID = document.getElementById('quem-somos-page');
+const perdiPageID = document.getElementById('perdi-page');
+const eventosPageID = document.getElementById('eventos-page');
+const quemSomosPageID = document.getElementById('quemsomos-page');
 const homePageID = document.querySelectorAll('.home-page');
 
 const cleanPage = () => {
@@ -67,8 +68,9 @@ const cleanSubPages = () => {
     encontreiPageID.style.display = 'none';
     blogPageID.style.display = 'none';
     doarPageID.style.display = 'none';
-    eventosPageID.style.display = 'none';
     ongsPageID.style.display = 'none';
+    perdiPageID.style.display = 'none';
+    eventosPageID.style.display = 'none';
     quemSomosPageID.style.display = 'none';
 };
 
@@ -112,10 +114,10 @@ const blog = document.getElementById('blog').addEventListener('click', (event) =
     blogPageID.style.display = '';
 });
 
-const eventos = document.getElementById('eventos').addEventListener('click', (event) => {
+const perdi = document.getElementById('perdi').addEventListener('click', (event) => {
     event.preventDefault();
     cleanPage();
-    eventosPageID.style.display = '';
+    perdiPageID.style.display = '';
 });
 
 const ongs = document.getElementById('ongs').addEventListener('click', (event) => {
@@ -124,7 +126,13 @@ const ongs = document.getElementById('ongs').addEventListener('click', (event) =
     ongsPageID.style.display = '';
 });
 
-const quemSomos = document.getElementById('quem-somos-page').addEventListener('click', (event) => {
+const eventos = document.getElementById('eventos').addEventListener('click', (event) => {
+    event.preventDefault();
+    cleanPage();
+    eventosPageID.style.display = '';
+});
+
+const quemSomos = document.getElementById('quem-somos').addEventListener('click', (event) => {
     event.preventDefault();
     cleanPage();
     quemSomosPageID.style.display = '';

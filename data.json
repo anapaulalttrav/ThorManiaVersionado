@@ -1,435 +1,82 @@
 [
-    {
-        "id": "1",
-        "nome": "Rex",
-        "idade": 3,
-        "raca": "Labrador",
-        "descricao": "Um cachorro extremamente amigável, cheio de energia e que adora brincar ao ar livre, sendo excelente companhia para famílias e crianças.",
-        "imagem": "https://example.com/rex.jpg"
-    },
-    {
-        "id": "2",
-        "nome": "Mia",
-        "idade": 2,
-        "raca": "Poodle",
-        "descricao": "Uma cachorra muito inteligente, obediente e carinhosa, conhecida por aprender comandos rapidamente e demonstrar grande apego aos seus tutores.",
-        "imagem": "https://example.com/mia.jpg"
-    },
-    {
-        "id": "3",
-        "nome": "Thor",
-        "idade": 4,
-        "raca": "Bulldog",
-        "descricao": "Um cachorro robusto, leal e tranquilo, que prefere ambientes calmos e demonstra forte senso de proteção com sua família.",
-        "imagem": "https://example.com/thor.jpg"
-    },
-    {
-        "id": "4",
-        "nome": "Luna",
-        "idade": 1,
-        "raca": "Golden Retriever",
-        "descricao": "Uma cachorra doce e sociável, sempre animada para interagir com pessoas e outros animais, demonstrando comportamento gentil e equilibrado.",
-        "imagem": "https://example.com/luna.jpg"
-    },
-    {
-        "id": "5",
-        "nome": "Max",
-        "idade": 5,
-        "raca": "Pastor Alemão",
-        "descricao": "Um cachorro altamente protetor, inteligente e disciplinado, ideal para funções de guarda e convivência familiar responsável.",
-        "imagem": "https://example.com/max.jpg"
-    },
-    {
-        "id": "6",
-        "nome": "Bella",
-        "idade": 2,
-        "raca": "Shih Tzu",
-        "descricao": "Uma cachorra tranquila e afetuosa, que aprecia momentos de descanso e carinho, sendo perfeita para ambientes domésticos.",
-        "imagem": "https://example.com/bella.jpg"
-    },
-    {
-        "id": "7",
-        "nome": "Rocky",
-        "idade": 3,
-        "raca": "Boxer",
-        "descricao": "Um cachorro enérgico, brincalhão e muito leal, sempre disposto a participar de atividades físicas e interações com sua família.",
-        "imagem": "https://example.com/rocky.jpg"
-    },
-    {
-        "id": "8",
-        "nome": "Nina",
-        "idade": 4,
-        "raca": "Beagle",
-        "descricao": "Uma cachorra curiosa e exploradora, conhecida por seu excelente olfato e personalidade alegre e independente.",
-        "imagem": "https://example.com/nina.jpg"
-    },
-    {
-        "id": "9",
-        "nome": "Zeus",
-        "idade": 6,
-        "raca": "Rottweiler",
-        "descricao": "Um cachorro forte e imponente, extremamente fiel e protetor, com comportamento equilibrado quando bem treinado.",
-        "imagem": "https://example.com/zeus.jpg"
-    },
-    {
-        "id": "10",
-        "nome": "Mel",
-        "idade": 1,
-        "raca": "Pinscher",
-        "descricao": "Uma cachorra pequena, ágil e muito alerta, com personalidade corajosa e cheia de energia.",
-        "imagem": "https://example.com/mel.jpg"
-    },
-
-    {
-        "id": "11",
-        "nome": "Simba",
-        "idade": 2,
-        "raca": "Husky Siberiano",
-        "descricao": "Um cachorro resistente e aventureiro, com grande energia e necessidade de atividades físicas frequentes.",
-        "imagem": "https://example.com/simba.jpg"
-    },
-    {
-        "id": "12",
-        "nome": "Amora",
-        "idade": 3,
-        "raca": "Border Collie",
-        "descricao": "Uma cachorra extremamente inteligente e ativa, ideal para treinamento avançado e atividades que exigem concentração.",
-        "imagem": "https://example.com/amora.jpg"
-    },
-    {
-        "id": "13",
-        "nome": "Bolt",
-        "idade": 2,
-        "raca": "Doberman",
-        "descricao": "Um cachorro ágil, atento e protetor, conhecido por sua lealdade e capacidade de resposta rápida.",
-        "imagem": "https://example.com/bolt.jpg"
-    },
-    {
-        "id": "14",
-        "nome": "Lola",
-        "idade": 5,
-        "raca": "Cocker Spaniel",
-        "descricao": "Uma cachorra dócil e carinhosa, que aprecia companhia constante e demonstra comportamento amigável.",
-        "imagem": "https://example.com/lola.jpg"
-    },
-    {
-        "id": "15",
-        "nome": "Apolo",
-        "idade": 4,
-        "raca": "Akita",
-        "descricao": "Um cachorro reservado e extremamente leal, com forte instinto de proteção e personalidade independente.",
-        "imagem": "https://example.com/apolo.jpg"
-    },
-
-    {
-        "id": "16",
-        "nome": "Pandora",
-        "idade": 2,
-        "raca": "Chow Chow",
-        "descricao": "Uma cachorra tranquila e observadora, com comportamento independente e aparência marcante.",
-        "imagem": "https://example.com/pandora.jpg"
-    },
-    {
-        "id": "17",
-        "nome": "Fred",
-        "idade": 7,
-        "raca": "Dachshund",
-        "descricao": "Um cachorro curioso e persistente, conhecido por sua coragem e personalidade determinada.",
-        "imagem": "https://example.com/fred.jpg"
-    },
-    {
-        "id": "18",
-        "nome": "Kiara",
-        "idade": 3,
-        "raca": "Lhasa Apso",
-        "descricao": "Uma cachorra vigilante e independente, que mantém atenção constante ao ambiente ao seu redor.",
-        "imagem": "https://example.com/kiara.jpg"
-    },
-    {
-        "id": "19",
-        "nome": "Bruce",
-        "idade": 6,
-        "raca": "Pit Bull",
-        "descricao": "Um cachorro forte e carinhoso, que demonstra grande afeto e lealdade quando bem socializado.",
-        "imagem": "https://example.com/bruce.jpg"
-    },
-    {
-        "id": "20",
-        "nome": "Jade",
-        "idade": 1,
-        "raca": "Maltês",
-        "descricao": "Uma cachorra delicada e muito afetuosa, que gosta de atenção constante e ambientes tranquilos.",
-        "imagem": "https://example.com/jade.jpg"
-    },
-
-    {
-        "id": "21",
-        "nome": "Rambo",
-        "idade": 5,
-        "raca": "Fila Brasileiro",
-        "descricao": "Um cachorro protetor e corajoso, com forte instinto territorial e grande lealdade à família.",
-        "imagem": "https://example.com/rambo.jpg"
-    },
-    {
-        "id": "22",
-        "nome": "Nala",
-        "idade": 2,
-        "raca": "Golden Retriever",
-        "descricao": "Uma cachorra extremamente amigável, sociável e ideal para convivência com crianças.",
-        "imagem": "https://example.com/nala.jpg"
-    },
-    {
-        "id": "23",
-        "nome": "Spike",
-        "idade": 4,
-        "raca": "Bulldog Francês",
-        "descricao": "Um cachorro brincalhão e afetuoso, que adora interagir com pessoas e descansar em ambientes confortáveis.",
-        "imagem": "https://example.com/spike.jpg"
-    },
-    {
-        "id": "24",
-        "nome": "Maya",
-        "idade": 3,
-        "raca": "Samoyeda",
-        "descricao": "Uma cachorra alegre e amigável, conhecida por sua energia e comportamento sociável.",
-        "imagem": "https://example.com/maya.jpg"
-    },
-    {
-        "id": "25",
-        "nome": "Toby",
-        "idade": 6,
-        "raca": "Pug",
-        "descricao": "Um cachorro divertido e companheiro, que aprecia momentos de descanso e atenção constante.",
-        "imagem": "https://example.com/toby.jpg"
-    },
-
-    {
-        "id": "26",
-        "nome": "Cacau",
-        "idade": 2,
-        "raca": "Yorkshire Terrier",
-        "descricao": "Uma cachorra pequena, ativa e muito vigilante, com personalidade corajosa.",
-        "imagem": "https://example.com/cacau.jpg"
-    },
-    {
-        "id": "27",
-        "nome": "Thor II",
-        "idade": 3,
-        "raca": "Husky Siberiano",
-        "descricao": "Um cachorro resistente e energético, ideal para ambientes amplos e atividades físicas intensas.",
-        "imagem": "https://example.com/thor2.jpg"
-    },
-    {
-        "id": "28",
-        "nome": "Safira",
-        "idade": 4,
-        "raca": "Border Collie",
-        "descricao": "Uma cachorra extremamente inteligente, que aprende rapidamente e precisa de estímulos mentais constantes.",
-        "imagem": "https://example.com/safira.jpg"
-    },
-    {
-        "id": "29",
-        "nome": "Logan",
-        "idade": 5,
-        "raca": "Rottweiler",
-        "descricao": "Um cachorro forte e disciplinado, que demonstra lealdade e comportamento protetor.",
-        "imagem": "https://example.com/logan.jpg"
-    },
-    {
-        "id": "30",
-        "nome": "Estrela",
-        "idade": 1,
-        "raca": "Shih Tzu",
-        "descricao": "Uma cachorra dócil e tranquila, que aprecia ambientes calmos e contato humano.",
-        "imagem": "https://example.com/estrela.jpg"
-    },
-
-    {
-        "id": "31",
-        "nome": "Bidu",
-        "idade": 8,
-        "raca": "SRD",
-        "descricao": "Um cachorro experiente e tranquilo, que demonstra comportamento equilibrado e afetuoso.",
-        "imagem": "https://example.com/bidu.jpg"
-    },
-    {
-        "id": "32",
-        "nome": "Fiona",
-        "idade": 2,
-        "raca": "Boxer",
-        "descricao": "Uma cachorra cheia de energia e entusiasmo, sempre pronta para brincar.",
-        "imagem": "https://example.com/fiona.jpg"
-    },
-    {
-        "id": "33",
-        "nome": "Ralf",
-        "idade": 4,
-        "raca": "Doberman",
-        "descricao": "Um cachorro atento e protetor, com comportamento disciplinado e confiável.",
-        "imagem": "https://example.com/ralf.jpg"
-    },
-    {
-        "id": "34",
-        "nome": "Aurora",
-        "idade": 3,
-        "raca": "Golden Retriever",
-        "descricao": "Uma cachorra amigável e extremamente carinhosa, ideal para convivência familiar.",
-        "imagem": "https://example.com/aurora.jpg"
-    },
-    {
-        "id": "35",
-        "nome": "Marley",
-        "idade": 6,
-        "raca": "Labrador",
-        "descricao": "Um cachorro sociável e brincalhão, conhecido por sua energia e companheirismo.",
-        "imagem": "https://example.com/marley.jpg"
-    },
-
-    {
-        "id": "36",
-        "nome": "Kiwi",
-        "idade": 1,
-        "raca": "Spitz Alemão",
-        "descricao": "Uma cachorra ativa e curiosa, sempre alerta ao ambiente ao seu redor.",
-        "imagem": "https://example.com/kiwi.jpg"
-    },
-    {
-        "id": "37",
-        "nome": "Hulk",
-        "idade": 5,
-        "raca": "Pit Bull",
-        "descricao": "Um cachorro forte e extremamente leal, que demonstra grande afeto com sua família.",
-        "imagem": "https://example.com/hulk.jpg"
-    },
-    {
-        "id": "38",
-        "nome": "Lili",
-        "idade": 2,
-        "raca": "Maltês",
-        "descricao": "Uma cachorra delicada e afetuosa, que aprecia atenção e carinho constante.",
-        "imagem": "https://example.com/lili.jpg"
-    },
-    {
-        "id": "39",
-        "nome": "Nick",
-        "idade": 4,
-        "raca": "Beagle",
-        "descricao": "Um cachorro curioso e explorador, com excelente olfato e personalidade alegre.",
-        "imagem": "https://example.com/nick.jpg"
-    },
-    {
-        "id": "40",
-        "nome": "Pipoca",
-        "idade": 3,
-        "raca": "SRD",
-        "descricao": "Uma cachorra animada e sociável, que se adapta facilmente a diferentes ambientes.",
-        "imagem": "https://example.com/pipoca.jpg"
-    },
-
-    {
-        "id": "41",
-        "nome": "Koda",
-        "idade": 2,
-        "raca": "Akita",
-        "descricao": "Um cachorro reservado e fiel, com comportamento calmo e protetor.",
-        "imagem": "https://example.com/koda.jpg"
-    },
-    {
-        "id": "42",
-        "nome": "Nina II",
-        "idade": 5,
-        "raca": "Poodle",
-        "descricao": "Uma cachorra inteligente e obediente, que responde rapidamente a treinamentos.",
-        "imagem": "https://example.com/nina2.jpg"
-    },
-    {
-        "id": "43",
-        "nome": "Barão",
-        "idade": 7,
-        "raca": "Fila Brasileiro",
-        "descricao": "Um cachorro imponente e protetor, com forte senso de território.",
-        "imagem": "https://example.com/barao.jpg"
-    },
-    {
-        "id": "44",
-        "nome": "Dora",
-        "idade": 1,
-        "raca": "Shih Tzu",
-        "descricao": "Uma cachorra pequena e muito carinhosa, que adora companhia humana.",
-        "imagem": "https://example.com/dora.jpg"
-    },
-    {
-        "id": "45",
-        "nome": "Trovão",
-        "idade": 6,
-        "raca": "Rottweiler",
-        "descricao": "Um cachorro forte e disciplinado, com comportamento vigilante e leal.",
-        "imagem": "https://example.com/trovao.jpg"
-    },
-
-    {
-        "id": "46",
-        "nome": "Maggie",
-        "idade": 3,
-        "raca": "Border Collie",
-        "descricao": "Uma cachorra extremamente inteligente e ativa, ideal para atividades que exigem foco e agilidade.",
-        "imagem": "https://example.com/maggie.jpg"
-    },
-    {
-        "id": "47",
-        "nome": "Zeca",
-        "idade": 8,
-        "raca": "SRD",
-        "descricao": "Um cachorro tranquilo e experiente, que demonstra comportamento equilibrado.",
-        "imagem": "https://example.com/zeca.jpg"
-    },
-    {
-        "id": "48",
-        "nome": "Melody",
-        "idade": 2,
-        "raca": "Golden Retriever",
-        "descricao": "Uma cachorra doce e sociável, sempre disposta a interagir com pessoas e outros animais.",
-        "imagem": "https://example.com/melody.jpg"
-    },
-    {
-        "id": "49",
-        "nome": "Jack",
-        "idade": 4,
-        "raca": "Jack Russell Terrier",
-        "descricao": "Um cachorro extremamente ativo e curioso, que precisa de estímulos constantes.",
-        "imagem": "https://example.com/jack.jpg"
-    },
-    {
-        "id": "50",
-        "nome": "Olivia",
-        "idade": 1,
-        "raca": "Spitz Alemão",
-        "descricao": "Uma cachorra animada e cheia de energia, com comportamento sociável.",
-        "imagem": "https://example.com/olivia.jpg"
-    },
-
-    {
-        "id": "51",
-        "nome": "Atlas",
-        "idade": 5,
-        "raca": "Pastor Alemão",
-        "descricao": "Um cachorro disciplinado, inteligente e extremamente fiel, conhecido por sua capacidade de proteção e aprendizado rápido.",
-        "imagem": "https://example.com/atlas.jpg"
-    },
-    {
-        "id": "52",
-        "nome": "Ruby",
-        "idade": 3,
-        "raca": "Labrador",
-        "descricao": "Uma cachorra carinhosa e brincalhona, que adora interagir com pessoas e participar de atividades ao ar livre.",
-        "imagem": "https://example.com/ruby.jpg"
-    },
-    {
-        "id": "53",
-        "nome": "Ozzy",
-        "idade": 6,
-        "raca": "Bulldog",
-        "descricao": "Um cachorro calmo e companheiro, que aprecia ambientes tranquilos e momentos de descanso.",
-        "imagem": "https://example.com/ozzy.jpg"
-    }
+  {
+    "id": "1",
+    "nome": "Rex",
+    "idade": 3,
+    "raca": "Labrador",
+    "descricao": "Um cachorro extremamente amigável, cheio de energia e que adora brincar ao ar livre, sendo excelente companhia para famílias e crianças.",
+    "imagem": "https://images.dog.ceo/breeds/labrador/n02099712_3503.jpg"
+  },
+  {
+    "id": "2",
+    "nome": "Mia",
+    "idade": 2,
+    "raca": "Poodle",
+    "descricao": "Uma cachorra muito inteligente, obediente e carinhosa, conhecida por aprender comandos rapidamente e demonstrar grande apego aos seus tutores.",
+    "imagem": "https://images.dog.ceo/breeds/poodle-standard/n02113799_2280.jpg"
+  },
+  {
+    "id": "3",
+    "nome": "Thor",
+    "idade": 4,
+    "raca": "Bulldog",
+    "descricao": "Um cachorro robusto, leal e tranquilo, que prefere ambientes calmos e demonstra forte senso de proteção com sua família.",
+    "imagem": "https://images.dog.ceo/breeds/bulldog-english/jager-2.jpg"
+  },
+  {
+    "id": "4",
+    "nome": "Luna",
+    "idade": 1,
+    "raca": "Golden Retriever",
+    "descricao": "Uma cachorra doce e sociável, sempre animada para interagir com pessoas e outros animais, demonstrando comportamento gentil e equilibrado.",
+    "imagem": "https://images.dog.ceo/breeds/retriever-golden/n02099601_3004.jpg"
+  },
+  {
+    "id": "5",
+    "nome": "Max",
+    "idade": 5,
+    "raca": "Pastor Alemão",
+    "descricao": "Um cachorro altamente protetor, inteligente e disciplinado, ideal para funções de guarda e convivência familiar responsável.",
+    "imagem": "https://images.dog.ceo/breeds/germanshepherd/n02106662_16149.jpg"
+  },
+  {
+    "id": "6",
+    "nome": "Bella",
+    "idade": 2,
+    "raca": "Shih Tzu",
+    "descricao": "Uma cachorra tranquila e afetuosa, que aprecia momentos de descanso e carinho, sendo perfeita para ambientes domésticos.",
+    "imagem": "https://images.dog.ceo/breeds/shihtzu/n02086240_2610.jpg"
+  },
+  {
+    "id": "7",
+    "nome": "Rocky",
+    "idade": 3,
+    "raca": "Boxer",
+    "descricao": "Um cachorro enérgico, brincalhão e muito leal, sempre disposto a participar de atividades físicas e interações com sua família.",
+    "imagem": "https://images.dog.ceo/breeds/boxer/n02108089_1159.jpg"
+  },
+  {
+    "id": "8",
+    "nome": "Nina",
+    "idade": 4,
+    "raca": "Beagle",
+    "descricao": "Uma cachorra curiosa e exploradora, conhecida por seu excelente olfato e personalidade alegre e independente.",
+    "imagem": "https://images.dog.ceo/breeds/beagle/n02101344_1223.jpg"
+  },
+  {
+    "id": "9",
+    "nome": "Zeus",
+    "idade": 6,
+    "raca": "Rottweiler",
+    "descricao": "Um cachorro forte e imponente, extremamente fiel e protetor.",
+    "imagem": "https://images.dog.ceo/breeds/rottweiler/n02106550_5033.jpg"
+  },
+  {
+    "id": "10",
+    "nome": "Mel",
+    "idade": 1,
+    "raca": "Pinscher",
+    "descricao": "Uma cachorra pequena, ágil e muito alerta, com personalidade corajosa.",
+    "imagem": "https://images.dog.ceo/breeds/pinscher-miniature/n02107314_2901.jpg"
+  }
 ]

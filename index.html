@@ -47,7 +47,7 @@
             <div class="list-group list-group-flush">
                 <a href="#" class="list-group-item list-group-item-action home-page">Início</a>
                 <a href="#" class="list-group-item list-group-item-action">Meu Perfil</a>
-                <a id="quem-somos-page" href="#" class="list-group-item list-group-item-action">Quem Somos</a>
+                <a id="quem-somos" href="#" class="list-group-item list-group-item-action">Quem Somos</a>
                 <a href="forms.html" class="list-group-item list-group-item-action">Contato</a> 
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -328,11 +328,53 @@
                 <h3>Histórias de Pets</h3>
                 <p>Pastor Alemão ¨Perde a Luta¨ Para Gatinho Atacado de Amor...</p>
             </div>
-
-
         </section>
     </div>
-    
+
+    <!-- Formulário perdi um pet -->
+
+    <div id="perdi-page" style="display: none;">
+        <formulario do pet desaparecido>
+        <div class="file">
+            <h2><img src="imagens/icoPerdi.webp">Perdi um Pet</h2>
+
+            <form>
+                <label for="foto">Foto do pet (recente):</label>
+                <input type="file" id="foto" accept="image/*" onchange="previewImagem(event)">
+
+                <div class="preview">
+                    <img id="imagemPreview" src="" alt="">
+                </div>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite o nome do pet desaparecido">
+
+                <label for="raca">Raça:</label>
+                <input type="text" id="raca" placeholder="Digite a raça">
+
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" placeholder="Ex: 10">
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" rows="4" placeholder="Digite uma descrição detalhada do pet"></textarea>
+
+                <label for="visto">Ultima vez visto:</label>
+                <textarea id="visto" rows="2" placeholder="Digite onde e quando o pet foi visto pela última vez"></textarea>
+
+                <label for="dono">Reportante:</label>
+                <input type="text" id="dono" placeholder="Digite o nome do reportante">
+
+                <label for="contato">Contato:</label>
+                <input type="text" id="contato" placeholder="Digite um contato para retorno (Ex. email ou telefone)">
+
+                <button type="submit">Enviar!</button>
+                <button class="btn btn-outline-secondary mt-3 home-page">
+                    Voltar
+                </button>
+            </form>
+        </div>
+    </div>
+
     <!-- Formulário para "Cadastrar Evento" -->
 
     <div id="eventos-page" style="display: none;">
@@ -482,7 +524,7 @@
                 </div>
             </section>
 
-            <a href="index.html" class="btn-voltar">Voltar para o Início</a>
+            <a href="#" class="btn-voltar home-page">Voltar para o Início</a>
     </div>
 </main>
 
