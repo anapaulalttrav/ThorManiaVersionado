@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThorMania</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="stylePET.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+<header class="header-adocao">
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <a href="\index.html" class="logo-area">
+            <i class="fas fa-heart heart-icon">
+                <i class="fas fa-paw paw-inside"></i>
+            </i>
+
+            <span class="logo-text">ThorMania</span>
+        </a>
+
+        <div class="icons-area">
+            <i class="fas fa-search search-icon"></i>
+
+            <div class="menu-circle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<formulario do pet desaparecido>
+<div class="file">
+    <h2><img src="imagens/icoPerdi.webp">Perdi um Pet</h2>
+
+    <form>
+        <label for="foto">Foto do pet (recente):</label>
+        <input type="file" id="foto" accept="image/*" onchange="previewImagem(event)">
+
+        <div class="preview">
+            <img id="imagemPreview" src="" alt="">
+        </div>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite o nome do pet desaparecido">
+
+        <label for="raca">Raça:</label>
+        <input type="text" id="raca" placeholder="Digite a raça">
+
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" placeholder="Ex: 10">
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" rows="4" placeholder="Digite uma descrição detalhada do pet"></textarea>
+
+        <label for="visto">Ultima vez visto:</label>
+        <textarea id="visto" rows="2" placeholder="Digite onde e quando o pet foi visto pela última vez"></textarea>
+
+        <label for="dono">Reportante:</label>
+        <input type="text" id="dono" placeholder="Digite o nome do reportante">
+
+        <label for="contato">Contato:</label>
+        <input type="text" id="contato" placeholder="Digite um contato para retorno (Ex. email ou telefone)">
+
+        <button type="submit">Enviar!</button>
+    </form>
+</div>
+
+<script>
+function previewImagem(event) {
+    const imagem = document.getElementById('imagemPreview');
+    imagem.src = URL.createObjectURL(event.target.files[0]);
+}
+</script>
+
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2026 ThorMania. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>
