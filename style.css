@@ -242,49 +242,113 @@ body {
     letter-spacing: 1px;
 }
 
-/* Seção Quem Somos */
-.about-section {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-    margin-bottom: 40px;
-}
-
-.about-section h2 {
-    color: #d9534f;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    border-bottom: 2px solid #fce4e4;
-    padding-bottom: 10px;
-}
-
-.about-section p {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-    color: #5a5a5a;
-}
-
-/* Seção Queremos sua Ajuda & Grid de Cards */
-.help-section {
-    margin-bottom: 40px;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.section-title h2 {
-    color: #d9534f;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.section-title p {
-    max-width: 700px;
+/* Configurações Gerais e Fontes */
+#quemsomos-page {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #4a3e3e; /* Um cinza escuro levemente quente */
+    background-color: #fff5f5; /* Fundo rosa bem clarinho/pastel */
+    padding: 40px 20px;
+    max-width: 1200px;
     margin: 0 auto;
-    color: #777;
+}
+
+/* Títulos das Seções */
+.titulo-sessao {
+    font-size: 2.2rem;
+    color: #5c3d46; /* Rosa escuro/queimado, muito elegante */
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+    font-weight: 700;
+}
+
+/* Detalhe elegante embaixo dos títulos */
+.titulo-sessao::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ff85a2; /* Rosa vibrante para destaque */
+    margin: 8px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Seção de História (Quem Somos) */
+.historia {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(224, 169, 175, 0.15); /* Sombra suave em tom rosa */
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.historia p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #55494c;
+}
+
+.historia strong {
+    color: #d9406b; /* Destaque elegante para o nome ThorMania */
+    font-size: 1.15rem;
+}
+
+/* Seção de Ajuda */
+.ajuda-area {
+    background: #ffffff;
+    padding: 45px 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(224, 169, 175, 0.15);
+    text-align: center;
+}
+
+.ajuda-area > p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 35px auto;
+    line-height: 1.6;
+    color: #55494c;
+}
+
+/* Container dos Cards de Ajuda */
+.cards-ajuda {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* O Card Individual (Ex: Doar) */
+.card {
+    background: #fffafb; /* Fundo do card quase branco, puxado pro rosa */
+    border: 1px solid #fce2e6;
+    border-radius: 16px;
+    padding: 30px 25px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse no Card */
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #ff85a2;
+    box-shadow: 0 10px 25px rgba(255, 133, 162, 0.2);
+}
+
+.card h3 {
+    font-size: 1.35rem;
+    color: #5c3d46;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #706265;
+    line-height: 1.6;
 }
 
 /* Layout dos Quadradinhos (Cards) */
