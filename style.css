@@ -1,3 +1,7 @@
+/* PROJETO: ThorMania
+DESCRIÇÃO: Estilização do site de adoção de pets, com foco em um design moderno e amigável, utilizando cores vibrantes e elementos gráficos relacionados a animais de estimação.
+AUTOR: Ana Paula Lopes Travassos 
+DATA: 2026-02-09 */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 /* Container do Header */
 .header-adocao {
@@ -141,3 +145,511 @@ body {
     font-size: 18px;
     cursor: pointer;
 }
+
+/* Limpa o fundo do menu */
+.offcanvas {
+    background-color: white !important;
+}
+
+/* Deixa o topo colorido */
+.offcanvas-header {
+    background: linear-gradient(45deg, #ff416c, #ff9800) !important;
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Fredoka', 'Comic Sans MS', cursive, sans-serif;
+
+}
+
+/* Garante que o ícone e o X fiquem brancos no topo */
+.offcanvas-header .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+
+/* Garante que os links fiquem brancos por padrão */
+.list-group-item {
+    background-color: transparent !important;
+    color: black !important;
+    border: none;
+}
+
+.boasvindas {
+    font-family: 'Fredoka', 'Comic Sans MS', cursive, sans-serif; 
+    color: #ff9800 !important; /* Laranja */
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* 1. Estilo padrão dos itens do menu */
+.list-group-item-action {
+    transition: all 0.4s ease; /* Aqui acontece a mágica da suavidade */
+    background-color: transparent !important;
+    color: rgb(0, 0, 0) !important;
+    border: none;
+    display: block;
+    padding: 10px 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* 2. O efeito ao passar o mouse (Hover) */
+.list-group-item-action:hover {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b) !important;
+    color: white !important;
+    
+    /* Faz o item "saltar" levemente para o lado ou para frente */
+    transform: translateX(10px); /* Move 10px para a direita */
+    /* Se preferir que ele cresça, use: transform: scale(1.05); */
+    
+    border-radius: 15px; /* Arredonda os cantos durante a animação */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombrinha */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+body {
+    font-family: 'Fredoka', cursive;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fcf8f7;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Cabeçalho */
+.main-header {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.logo-text {
+    color: #d9534f; /* Tom coral/rosa profissional */
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Configurações Gerais e Fontes */
+#quemsomos-page {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #4a3e3e; /* Um cinza escuro levemente quente */
+    background-color: #fff5f5; /* Fundo rosa bem clarinho/pastel */
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Títulos das Seções */
+.titulo-sessao {
+    font-size: 2.2rem;
+    color: #5c3d46; /* Rosa escuro/queimado, muito elegante */
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+    font-weight: 700;
+}
+
+/* Detalhe elegante embaixo dos títulos */
+.titulo-sessao::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ff85a2; /* Rosa vibrante para destaque */
+    margin: 8px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Seção de História (Quem Somos) */
+.historia {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(224, 169, 175, 0.15); /* Sombra suave em tom rosa */
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.historia p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #55494c;
+}
+
+.historia strong {
+    color: #d9406b; /* Destaque elegante para o nome ThorMania */
+    font-size: 1.15rem;
+}
+
+/* Seção de Ajuda */
+.ajuda-area {
+    background: #ffffff;
+    padding: 45px 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(224, 169, 175, 0.15);
+    text-align: center;
+}
+
+.ajuda-area > p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 35px auto;
+    line-height: 1.6;
+    color: #55494c;
+}
+
+/* Container dos Cards de Ajuda */
+.cards-ajuda {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* O Card Individual (Ex: Doar) */
+.card {
+    background: #fffafb; /* Fundo do card quase branco, puxado pro rosa */
+    border: 1px solid #fce2e6;
+    border-radius: 16px;
+    padding: 30px 25px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse no Card */
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #ff85a2;
+    box-shadow: 0 10px 25px rgba(255, 133, 162, 0.2);
+}
+
+.card h3 {
+    font-size: 1.35rem;
+    color: #5c3d46;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #706265;
+    line-height: 1.6;
+}
+
+/* Layout dos Quadradinhos (Cards) */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito sutil ao passar o mouse nos quadradinhos */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(217, 83, 79, 0.1);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    min-height: 50px; /* Garante alinhamento mesmo com textos de tamanhos diferentes */
+}
+
+/* Botões dos Cards */
+.btn-card {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #d9534f;
+    border: 2px solid #d9534f;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-card:hover {
+    background-color: #d9534f;
+    color: #ffffff;
+}
+
+/* Área do Botão Voltar */
+.action-area {
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: #d9534f;
+    color: #ffffff;
+    padding: 14px 35px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(217, 83, 79, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #c93d39;
+    box-shadow: 0 6px 15px rgba(217, 83, 79, 0.4);
+    transform: scale(1.02);
+}
+
+/* Rodapé */
+.main-footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    color: #888;
+    font-size: 0.9rem;
+    border-top: 1px solid #ededed;
+    margin-top: 40px;
+}
+/* Estilo para a página encontrei */
+#encontrei-page .card {
+    border: none;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#encontrei-page h2 {
+    color: #ff6b6b;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#encontrei-page p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+#encontrei-page .form-label {
+    font-weight: 600;
+    color: #444;
+}
+
+#encontrei-page .form-control,
+#encontrei-page .form-select {
+    border-radius: 12px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+#encontrei-page .form-control:focus,
+#encontrei-page .form-select:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.4);
+}
+
+#encontrei-page button[type="submit"] {
+    background: #ff6b6b;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#encontrei-page button[type="submit"]:hover {
+    background: #ff4f4f;
+    transform: scale(1.02);
+}
+
+#voltar-menu {
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#voltar-menu:hover {
+    background: #f1f1f1;
+}
+
+#encontrei-page {
+    animation: aparecer 0.5s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*Estilo para o formulario doar*/
+.file {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+label {
+    font-size: 1.0rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff5a94;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 90, 148, 0.3);
+}
+
+input[type="file"] {
+    border: none;
+}
+
+button {
+    margin-top: 18px;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #ff5a94, #ff8c00);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.preview {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.preview img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilo para a página de blogs */
+
+/* BREADCRUMB */
+.breadcrumb {
+  padding: 10px 20px;
+  color: #777;
+}
+
+/* CATEGORIAS */
+.categorias {
+  padding: 15px 20px;
+}
+
+.categorias button {
+  background: #2c2c2c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.categorias button:hover {
+  background: #ff5a94;
+}
+
+/* GRID POSTS */
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+
+  padding: 50px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* CARDS */
+
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .posts {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .logo-text {
+    font-size: 22px;
+  }
+}
+

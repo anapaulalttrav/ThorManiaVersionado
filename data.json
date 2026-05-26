@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "nome": "Rex",
+    "idade": 3,
+    "raca": "Labrador",
+    "descricao": "Um cachorro extremamente amigável, cheio de energia e que adora brincar ao ar livre, sendo excelente companhia para famílias e crianças.",
+    "imagem": "https://images.dog.ceo/breeds/labrador/n02099712_3503.jpg"
+  },
+  {
+    "id": "2",
+    "nome": "Mia",
+    "idade": 2,
+    "raca": "Poodle",
+    "descricao": "Uma cachorra muito inteligente, obediente e carinhosa, conhecida por aprender comandos rapidamente e demonstrar grande apego aos seus tutores.",
+    "imagem": "https://images.dog.ceo/breeds/poodle-standard/n02113799_2280.jpg"
+  },
+  {
+    "id": "3",
+    "nome": "Thor",
+    "idade": 4,
+    "raca": "Bulldog",
+    "descricao": "Um cachorro robusto, leal e tranquilo, que prefere ambientes calmos e demonstra forte senso de proteção com sua família.",
+    "imagem": "https://images.dog.ceo/breeds/bulldog-english/jager-2.jpg"
+  },
+  {
+    "id": "4",
+    "nome": "Luna",
+    "idade": 1,
+    "raca": "Golden Retriever",
+    "descricao": "Uma cachorra doce e sociável, sempre animada para interagir com pessoas e outros animais, demonstrando comportamento gentil e equilibrado.",
+    "imagem": "https://images.dog.ceo/breeds/retriever-golden/n02099601_3004.jpg"
+  },
+  {
+    "id": "5",
+    "nome": "Max",
+    "idade": 5,
+    "raca": "Pastor Alemão",
+    "descricao": "Um cachorro altamente protetor, inteligente e disciplinado, ideal para funções de guarda e convivência familiar responsável.",
+    "imagem": "https://images.dog.ceo/breeds/germanshepherd/n02106662_16149.jpg"
+  },
+  {
+    "id": "6",
+    "nome": "Bella",
+    "idade": 2,
+    "raca": "Shih Tzu",
+    "descricao": "Uma cachorra tranquila e afetuosa, que aprecia momentos de descanso e carinho, sendo perfeita para ambientes domésticos.",
+    "imagem": "https://images.dog.ceo/breeds/shihtzu/n02086240_2610.jpg"
+  },
+  {
+    "id": "7",
+    "nome": "Rocky",
+    "idade": 3,
+    "raca": "Boxer",
+    "descricao": "Um cachorro enérgico, brincalhão e muito leal, sempre disposto a participar de atividades físicas e interações com sua família.",
+    "imagem": "https://images.dog.ceo/breeds/boxer/n02108089_1159.jpg"
+  },
+  {
+    "id": "8",
+    "nome": "Nina",
+    "idade": 4,
+    "raca": "Beagle",
+    "descricao": "Uma cachorra curiosa e exploradora, conhecida por seu excelente olfato e personalidade alegre e independente.",
+    "imagem": "https://images.dog.ceo/breeds/beagle/n02101344_1223.jpg"
+  },
+  {
+    "id": "9",
+    "nome": "Zeus",
+    "idade": 6,
+    "raca": "Rottweiler",
+    "descricao": "Um cachorro forte e imponente, extremamente fiel e protetor.",
+    "imagem": "https://images.dog.ceo/breeds/rottweiler/n02106550_5033.jpg"
+  },
+  {
+    "id": "10",
+    "nome": "Mel",
+    "idade": 1,
+    "raca": "Pinscher",
+    "descricao": "Uma cachorra pequena, ágil e muito alerta, com personalidade corajosa.",
+    "imagem": "https://images.dog.ceo/breeds/pinscher-miniature/n02107314_2901.jpg"
+  }
+]

@@ -1,130 +1,649 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThorMania</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 <header class="header-adocao">
-    <div class="container d-flex justify-content-between align-items-center">
-        
-        <div class="logo-area">
-            <i class="fas fa-heart heart-icon">
-                <i class="fas fa-paw paw-inside"></i>
-            </i>
-            <span class="logo-text">ThorMania</span>
-            
-        </div>
+  <div class="container d-flex justify-content-between align-items-center">
 
+            <div class="logo-area home-page">
+                <i class="fas fa-heart heart-icon">
+                    <i class="fas fa-paw paw-inside"></i>
+                </i>
+                <span class="logo-text">ThorMania</span>
+
+            </div>
         <div class="icons-area">
             <i class="fas fa-search search-icon"></i>
-            <div class="menu-circle">
-                <i class="fas fa-bars"></i>
+                <button class="menu-circle btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+                    <i class="fas fa-bars"></i>
+                </button>
+        </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="menuLateral" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasLabel">
+                    <i class="fas fa-heart heart-icon" style="position: relative; color: rgb(243, 37, 140);">
+                        <i class="fas fa-paw paw-inside"
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 0.5em; color: #ffffff;"></i>
+                    </i>
+                    <span style="margin-left: 10px;">ThorMania</span>
+                </h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="boasvindas">Bem-vindo ao ThorMania!</p>
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action home-page">Início</a>
+                <a id="login" href="#" class="list-group-item list-group-item-action">Login</a>
+                <a id="cadastro" href="#" class="list-group-item list-group-item-action">Cadastro</a>
+                <a id="quem-somos" href="#" class="list-group-item list-group-item-action">Quem Somos</a>
+                <a id="contato" href="#" class="list-group-item list-group-item-action">Contato</a> 
             </div>
         </div>
-        
     </div>
 </header>
-
-<div class="container my-4">
-    <div class="row g-2 justify-content-center">
-        
-        <div class="col-6 col-md-3">
-            <a href="#" class="card-link">
-                <div class="card h-100 card-menu">
-                    <div class="card-body">
-                        <img src="imagens/icoAdotar.webp" alt="Adotar">
-                        <span class="card-text">ADOTAR</span>
+<main id="main-content">
+    <div class="container my-4">
+        <div class="row g-2 justify-content-center">
+            
+            <div id="adotar" class="col-6 col-md-3">
+                <a href="#" class="card-link">
+                    <div class="card h-100 card-menu">
+                        <div class="card-body">
+                            <img src="imagens/icoAdotar.webp" alt="Adotar">
+                            <span class="card-text">ADOTAR</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-6 col-md-3">
-            <a href="#" class="card-link">
-                <div class="card h-100 card-menu">
-                    <div class="card-body">
-                        <img src="imagens/icoDoar.webp" alt="Doar">
-                        <span class="card-text">DOAR</span>
+                </a>
+            </div>
+            <div id="doar" class="col-6 col-md-3">
+                <a href="#" class="card-link">
+                    <div class="card h-100 card-menu">
+                        <div class="card-body">
+                            <img src="imagens/icoDoar.webp" alt="Doar">
+                            <span class="card-text">DOAR</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-6 col-md-3">
-            <a href="#" class="card-link">
-                <div class="card h-100 card-menu">
-                    <div class="card-body">
-                        <img src="imagens/icoFeirasAdocao.webp" alt="Feiras">
-                        <span class="card-text">FEIRAS DE ADOÇÃO</span>
+                </a>
+            </div>
+            <div id="feiras" class="col-6 col-md-3">
+                <a href="#" class="card-link">
+                    <div class="card h-100 card-menu">
+                        <div class="card-body">
+                            <img src="imagens/icoFeirasAdocao.webp" alt="Feiras">
+                            <span class="card-text">FEIRAS DE ADOÇÃO</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
 
-        <div class="col-6 col-md-3">
-            <a href="#" class="card-link">
-                <div class="card h-100 card-menu">
-                    <div class="card-body">
-                        <img src="imagens/icoPerdi.webp" alt="Perdi">
-                        <span class="card-text">PERDI UM PET</span>
+            <div id="perdi" class="col-6 col-md-3">
+                <a href="#" class="card-link">
+                    <div class="card h-100 card-menu">
+                        <div class="card-body">
+                            <img src="imagens/icoPerdi.webp" alt="Perdi">
+                            <span class="card-text">PERDI UM PET</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
 
-        <div class="col-6 col-md-3">
-            <a href="#" class="card-link">
-                <div class="card h-100 card-menu">
-                    <div class="card-body">
-                        <img src="imagens/icoEncontrei.webp" alt="Encontrei">
-                        <span class="card-text">ENCONTREI UM PET</span>
+            <div id="encontrei" class="col-6 col-md-3">
+                <a href="#" class="card-link">
+                    <div class="card h-100 card-menu">
+                        <div class="card-body">
+                            <img src="imagens/icoEncontrei.webp" alt="Encontrei">
+                            <span class="card-text">ENCONTREI UM PET</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
 
-        <div class="col-6 col-md-3">
-            <a href="#" class="card-link">
-                <div class="card h-100 card-menu">
-                    <div class="card-body">
-                        <img src="imagens/icoBlog.webp" alt="Blog">
-                        <span class="card-text">BLOG</span>
+            <div id="blog" class="col-6 col-md-3">
+                <a href="#" class="card-link">
+                    <div class="card h-100 card-menu">
+                        <div class="card-body">
+                            <img src="imagens/icoBlog.webp" alt="Blog">
+                            <span class="card-text">BLOG</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
 
-        <div class="col-6 col-md-3">
-            <a href="#" class="card-link">
-                <div class="card h-100 card-menu">
-                    <div class="card-body">
-                        <img src="imagens/icoONGs.webp" alt="ONGs">
-                        <span class="card-text">ONGS</span>
+            <div id="ongs" class="col-6 col-md-3">
+                <a href="#" class="card-link">
+                    <div class="card h-100 card-menu">
+                        <div class="card-body">
+                            <img src="imagens/icoONGs.webp" alt="ONGs">
+                            <span class="card-text">ONGS</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
 
-        <div class="col-6 col-md-3">
-            <a href="#" class="card-link">
-                <div class="card h-100 card-menu">
-                    <div class="card-body">
-                        <img src="imagens/icoCadastrarEventos.webp" alt="Evento">
-                        <span class="card-text">CADASTRAR EVENTO</span>
+            <div id="eventos" class="col-6 col-md-3">
+                <a href="#" class="card-link">
+                    <div class="card h-100 card-menu">
+                        <div class="card-body">
+                            <img src="imagens/icoCadastrarEventos.webp" alt="Evento">
+                            <span class="card-text">CADASTRAR EVENTO</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
 
+        </div>
     </div>
-</div>
-    
 
+    <div id="adotar-page" style="display: none;">
+        <h2>Adote um Pet</h2>
+        <p>Encontre o companheiro perfeito para você! Navegue por nossos pets disponíveis para adoção e dê a eles um lar cheio de amor.</p>
+            <div id="pet-list">
+                <!-- Lista de pets para adoção será carregada aqui -->
+            </div>
+    </div>
+
+    <!-- Fomulário para "Encontrei um Pet" -->
+    <div id="encontrei-page" class="container my-5" style="display: none;">
+        <div class="card shadow p-4">
+        
+
+            <h2 class="text-center mb-3">🐾 Encontrei um Pet</h2>
+            <p class="text-center text-muted">
+                Ajude esse pet a encontrar seu dono 💛
+            </p>
+
+            <form id="form-encontrei">
+
+                <div class="mb-3">
+                    <label class="form-label">Nome do pet (se souber)</label>
+                    <input type="text" class="form-control" placeholder="Ex: Thor">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Tipo de animal</label>
+                    <select class="form-select">
+                        <option>Cachorro</option>
+                        <option>Gato</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Local onde encontrou</label>
+                    <input type="text" class="form-control" placeholder="Ex: Zona Leste - SP">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Descrição</label>
+                    <textarea class="form-control" rows="3" placeholder="Cor, tamanho, comportamento..."></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Foto do pet</label>
+                    <input type="file" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">
+                    Cadastrar Pet
+                </button>
+
+            </form>
+
+            <button class="btn btn-outline-secondary mt-3 home-page">
+                Voltar
+            </button>
+
+        </div>
+    </div>
+
+    <!-- Formulário para "Doar um Pet" -->
+
+    <div id="doar-page" class="file" style="display: none;">
+        <div>
+            <h2>Quer doar um pet?</h2>
+            <p>Preencha o formulário abaixo e nos envie as informações.</p>
+        </div>
+
+        <form>
+            <label for="foto">Foto do animal a ser doado:</label>
+                <input type="file" 
+                id="foto" 
+                accept="image/*" 
+                onchange="previewImagem(event)"
+                required
+                >
+
+            <div class="preview">
+                <img id="imagemPreview" src="" alt="">
+            </div>
+
+
+            <label for="raca">Raça:</label>
+                <input type="text" 
+                id="raca" 
+                placeholder="Informe a raça (se souber)"
+                >
+
+            <label for="descricao">Descrição:</label>
+                <textarea id="descricao" 
+                rows="4" 
+                placeholder="Insira uma descrição detalhada do animal"
+                required
+                ></textarea>
+        
+
+            <label for="dono">Doado por:</label>
+                <input type="text" 
+                id="dono" 
+                placeholder="Nome do doador"
+                required
+                >
+
+            <label for="telefone">Contato:</label>
+                <input type="tel" 
+                id="telefone" 
+                placeholder="Informe um contato para retorno"
+                pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
+                required>
+
+            <label for="email">E-mail:</label>
+                <input type="email" 
+                id="email" 
+                placeholder="Email para retorno (se preferir contato por email)"
+                >
+
+            <button type="submit">Enviar!</button>
+            <button class="btn btn-outline-secondary mt-3 home-page">
+                Voltar
+            </button>
+        </form>
+    </div>
+
+    <!-- Pagina de Blogs -->
+
+
+    <div id="blog-page" style="display: none;">
+        <!-- CATEGORIAS -->
+        <section class="categorias">
+            <button>Geral</button>
+            <button>Cachorros</button>
+            <button>Gatos</button>
+            <button>Raças</button>
+            <button>Adoção</button>
+        </section>
+
+        <!-- POSTS -->
+        <section class="posts">
+
+            <div class="card">
+                <img src="imagens/fofin1.jpg" alt="Tecnologia para pets">
+                <h3>Histórias de Pets</h3>
+                <p>Amizade Sem Espécies: Cão e Gato Viralizam em Selfie Fofa...</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/fofin2.jpg" alt="Adoção de animais">
+                <h3>Histórias de Adoção</h3>
+                <p>Dupla Improvável Encanta Internet com Momento de Carinho no Sofá...</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/fofin3.jpg" alt="Preparação para adoção">
+                <h3>Histórias de Pets</h3>
+                <p>Gangue dos Pets: Gato Lidera Grupo de Cachorros em Foto Hilária...</p>
+            </div>
+            
+            <div class="card">
+                <img src="imagens/fofin4.jpg" alt="Tecnologia para pets">
+                <h3>Histórias de Pets</h3>
+                <p>Olhares Que Derretem: Cachorro e Gatinho Viram Símbolo de Companheirismo...</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/fofin5.jpg" alt="Tecnologia para pets">
+                <h3>Histórias de Pets</h3>
+                <p>Soneca em Dose Dupla: Pet e Gatinho Dormindo Abraçados Viralizam...</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/fofin6.jpg" alt="Tecnologia para pets">
+                <h3>Histórias de Pets</h3>
+                <p>Pastor Alemão ¨Perde a Luta¨ Para Gatinho Atacado de Amor...</p>
+            </div>
+        </section>
+    </div>
+
+    <!--Feira de Adoção -->
+
+    <!-- POSTS -->
+    <div id="feira-page" style="display: none;">
+        <section class="posts">
+            <div class="card">
+                <img src="imagens/feira1.jpg"    alt="Tecnologia para pets">
+                <h3>Feira de Adoção chegando!</h3>
+                <p>Seu novo melhor amigo pode estar esperando por você. Venha adotar amor em forma de patas! 💛</p>
+            </div>
+            <div class="card">
+                <img src="imagens/feira2.jpg" alt="Tecnologia para pets">
+                <h3>Adote. Não compre.</h3>
+                <p>Neste sábado acontece nossa Feira de Adoção! Dê uma nova chance para um pet cheio de amor pra dar.</p>
+            </div>
+            <div class="card">
+                <img src="imagens/feira3.jpg" alt="Tecnologia para pets">
+                <h3>Uma adoção muda duas vidas!</h3>
+                <p>Participe da nossa Feira de Adoção e encontre um companheiro para todos os momentos.</p>
+            </div>
+            <div class="card">
+                <img src="imagens/feira4.jpg" alt="Tecnologia para pets">
+                <h3>Eles só precisam de uma chance…</h3>
+                <p>Venha conhecer cães e gatos resgatados na nossa Feira de Adoção e transforme uma vida hoje mesmo!</p>
+            </div>
+            <div class="card">
+                <img src="imagens/feira5.jpg" alt="Tecnologia para pets">
+                <h3>Seu novo amigo está te esperando!</h3>
+                <p>Feira de Adoção com animais vacinados, vermifugados e prontos para ganhar um lar cheio de carinho.</p>
+            </div>
+            <div class="card">
+                <img src="imagens/feira6.jpg" alt="Tecnologia para pets">
+                <h3>Amor não se compra, se adota!</h3>
+                <p>Não perca nossa Feira de Adoção e encontre o pet perfeito para fazer parte da sua família.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Página de ONGs -->
+
+    <div id="ongs-page" style="display: none;">
+        <h2 class="text-center mb-4">ONGs para ajudar 🐾</h2>
+        <div class="row g-3 justify-content-center">
+
+            <div class="col-6 col-md-3">
+                <a href="https://institutoamparanimal.org.br/" target="_blank" class="card-link"> 
+                        <div class="card card-menu destaque">
+                    <div class="card-body">
+                        <img src="imagens/ampara 2.0.png">
+                        <span class="card-text">AMPARA ANIMAL</span>
+                        <small>Resgate e proteção animal</small>
+                        <p class="summary">ONG dedicada ao resgate, tratamento e reabilitação de animais abandonados, maltratados e em situação de risco na região de São Paulo.</p>
+                    </div>
+                </div>
+            </a>    
+            </div>
+
+            <div class="col-6 col-md-3">
+                <a href="https://www.institutoluisamell.com/" target="_blank" class="card-link">
+                <div class="card card-menu destaque">
+                    <div class="card-body">
+                        <img src="imagens/instituto-luisa-mell-logo-png_seeklogo-357201.png">
+                        <span class="card-text">LUISA MELL</span>
+                        <small>Combate aos maus-tratos</small>
+                        <p class="summary">Instituto que combate os maus-tratos aos animais através de ações educativas, resgates e apoio jurídico para proteger animais em situação de vulnerabilidade.</p>
+                    </div>
+                </div>
+            </a>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <a href="https://adoteumgatinho.org.br/" target="_blank" class="card-link">
+                <div class="card card-menu destaque">
+                    <div class="card-body">
+                        <img src="imagens/adote um gatinho.png">
+                        <span class="card-text">ADOTE UM GATINHO</span>
+                        <small>Adoção de gatos</small>
+                        <p class="summary">Plataforma especializada em adoção responsável de gatos, conectando adotantes a felinos resgatados e promovendo cuidados adequados para uma vida feliz.</p>
+                    </div>
+                </div>
+            </a>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <a href="https://institutocaramelo.org/" target="_blank" class="card-link"><div class="card card-menu destaque">   
+                    <div class="card-body">
+                        <img src="imagens/caramelo.png">
+                        <span class="card-text">Instituto Caramelo</span>
+                        <small>Resgate e cuidado</small>
+                        <p class="summary">ONG focada no resgate, cuidado e adoção de animais de rua, especialmente cães e gatos, oferecendo abrigo temporário e tratamento veterinário.</p>
+                    </div>
+                </div>
+            </a>    
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Formulário perdi um pet -->
+
+    <div id="perdi-page" style="display: none;">
+        <formulario do pet desaparecido>
+        <div class="file">
+            <h2><img src="imagens/icoPerdi.webp">Perdi um Pet</h2>
+
+            <form>
+                <label for="foto">Foto do pet (recente):</label>
+                <input type="file" id="foto" accept="image/*" onchange="previewImagem(event)">
+
+                <div class="preview">
+                    <img id="imagemPreview" src="" alt="">
+                </div>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite o nome do pet desaparecido">
+
+                <label for="raca">Raça:</label>
+                <input type="text" id="raca" placeholder="Digite a raça">
+
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" placeholder="Ex: 10">
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" rows="4" placeholder="Digite uma descrição detalhada do pet"></textarea>
+
+                <label for="visto">Ultima vez visto:</label>
+                <textarea id="visto" rows="2" placeholder="Digite onde e quando o pet foi visto pela última vez"></textarea>
+
+                <label for="dono">Reportante:</label>
+                <input type="text" id="dono" placeholder="Digite o nome do reportante">
+
+                <label for="contato">Contato:</label>
+                <input type="text" id="contato" placeholder="Digite um contato para retorno (Ex. email ou telefone)">
+
+                <button type="submit">Enviar!</button>
+                <button class="btn btn-outline-secondary mt-3 home-page">
+                    Voltar
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Formulário para "Cadastrar Evento" -->
+
+    <div id="eventos-page" style="display: none;">
+        <formulario para cadastrar evento>
+            <div class="file">
+                <form>
+                    <h2>
+                        <img src="imagens\icoCadastrarEventos.webp">Cadastrar Evento
+                    </h2>
+                    <p>Preencha o formulário abaixo e nos envie as informações.</p>
+                    <label for="foto">Insira um Flyer de seu evento:</label>
+                        <input type="file" 
+                        id="foto" 
+                        accept="image/*" 
+                        onchange="previewImagem(event)"
+                        required
+                        >
+
+                    <div class="preview">
+                        <img id="imagemPreview" src="" alt="">
+                    </div>
+
+
+                    <label for="data">Data:</label>
+                        <input type="date" 
+                        id="data" 
+                        required
+                        >
+
+                    <label for="localizacao">Localização:</label>
+                        <input type="text" 
+                        id="localizacao" 
+                        placeholder="Informe o local do evento (rua, número, bairro, cidade, estado)"
+                        required
+                        ></textarea>
+                
+
+                    <label for="Responsavel">Responsável:</label>
+                        <input type="text" 
+                        id="Responsavel" 
+                        placeholder="Nome do responsável pelo evento"
+                        required
+                        >
+
+                    <label for="telefone">Contato:</label>
+                        <input type="tel" 
+                        id="telefone" 
+                        placeholder="Informe um contato"
+                        pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
+                        required>
+
+                    <label for="email">E-mail:</label>
+                        <input type="email" 
+                        id="email" 
+                        placeholder="Email para retorno"
+                        >
+
+                    <button type="submit">Enviar!</button>
+                    <button class="btn btn-outline-secondary mt-3 home-page">
+                        Voltar
+                    </button>
+                </form>
+            </div>
+    </div>
+
+    <!--Pagina de perfil-->
+
+    <div id="cadastro-page" class="cadastro-container" style="display: none;">
+        <form id="cadastro-form" class="file">
+            <h2>Criar Conta</h2>
+            <div class="campo">
+                <input type="text" 
+                placeholder="Nome Completo">
+            </div>
+            <div class="campo">
+                <input type="email" 
+                placeholder="E-mail">
+            </div>
+            <div class="campo">
+                <input type="password" 
+                placeholder="Senha">
+            </div>
+            <div class="campo">
+                <input type="password"
+                placeholder="Repetir Senha">
+            </div>
+            <button type="submit" class="btn-cadastrar">Cadastrar 🐾</button>
+            <button class="btn btn-outline-secondary mt-3 home-page">
+                Voltar
+            </button>
+        </form>
+    </div>
+
+    <div id="login-page" class="cadastro-container" style="display: none;">
+        <form id="login-form" class="file">
+            <h2>Login</h2>
+            <div class="campo">
+                <input type="email" 
+                placeholder="E-mail">
+            </div>
+            <div class="campo">
+                <input type="password" 
+                placeholder="Senha">
+            </div>
+            <button type="submit" class="btn-cadastrar">Entrar 🐾</button>
+            <button class="btn btn-outline-secondary mt-3 home-page">
+                Voltar
+            </button>
+        </form>
+    </div>
+
+    <!-- Página de Quem Somos -->
+
+    <div id="quemsomos-page" style="display: none;">
+        <section class="historia">
+                <h2 class="titulo-sessao">Quem Somos</h2>
+                <p>O <strong>ThorMania</strong> nasceu de um sonho e de um grande amor pelos animais. Percebemos que muitos cães esperavam ansiosos por um lar, enquanto muitas famílias queriam adotar, mas não sabiam por onde começar.</p>
+                
+                <p>Criamos este site para ser a ponte entre esses dois mundos. Nosso objetivo é facilitar o encontro entre humanos e seus novos melhores amigos, promovendo a adoção responsável e ajudando ONGs a darem mais visibilidade aos seus peludos.</p>
+            </section>
+
+            <section class="ajuda-area">
+                <h2 class="titulo-sessao">Queremos sua ajuda!</h2>
+                <p>Para manter o ThorMania no ar e ajudar cada vez mais animais, precisamos de você. Seja compartilhando nosso site, sendo um voluntário ou fazendo uma doação para as ONGs parceiras.</p>
+                
+                <div class="cards-ajuda">
+                    <div class="card">
+                        <h3>Doar</h3>
+                        <p>Ajude com ração, medicamentos ou valores para as ONGs.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Divulgar</h3>
+                        <p>Siga-nos nas redes sociais e compartilhe os animais que buscam um lar.</p>
+                    </div>
+                </div>
+                <button class="btn btn-outline-secondary mt-3 home-page">
+                    Voltar
+                </button>
+            </section>
+    </div>
+
+    <!--Pagina de contato-->
+
+    <div id="contato-page" class="contato-container" style="display:none;">
+        <form class="file">
+            <h2>Deixe sua Mensagem</h2>
+            <p>Tem alguma dúvida, sugestão ou quer compartilhar uma história de adoção? Entre em contato conosco!</p>
+            <div class="campo">
+                <input type="text" 
+                placeholder="Nome Completo">
+            </div>
+            <div class="campo">
+                <input type="email" 
+                placeholder="E-mail">
+            </div>
+            <div class="campo">
+                <input type="text" 
+                placeholder="Assunto">
+            </div>
+            <div class="campo">
+                <textarea placeholder="Sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn-cadastrar">Enviar Mensagem</button>
+            <button class="btn btn-outline-secondary mt-3 home-page">
+                Voltar
+            </button>
+        </form>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2026 ThorMania. Todos os direitos reservados.</p>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js" defer></script>
 </body>
 </html>
